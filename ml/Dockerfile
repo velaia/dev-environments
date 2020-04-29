@@ -53,6 +53,7 @@ RUN python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron
 
 EXPOSE 8889
 EXPOSE 8888
+EXPOSE 5000
 
 ENTRYPOINT ["jupyter","lab","--ip=0.0.0.0","--port=8889","--allow-root"]
 
