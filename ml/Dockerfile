@@ -46,7 +46,7 @@ RUN pip install efficientnet-pytorch
 
 # additional requirements for Detectron2 from
 # https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md
-RUN pip install cython pycocotools-fix flask
+RUN pip install cython pycocotools-fix flask gunicorn git
 RUN pip install pycocotools
 
 RUN python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/index.html
